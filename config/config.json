@@ -1,0 +1,42 @@
+{
+    "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+    "version": "2.0",
+    "bundles": {
+        "list-navigation-web-part": {
+            "components": [{
+                "entrypoint": "./lib/webparts/listNavigation/ListNavigationWebPart.js",
+                "manifest": "./src/webparts/listNavigation/ListNavigationWebPart.manifest.json"
+            }]
+        }
+    },
+    "externals": {
+        "sp-init": {
+            "path": "https://siriuscomputer.sharepoint.com/_layouts/15/init.js",
+            "globalName": "$_global_init"
+        },
+        "microsoft-ajax": {
+            "path": "https://siriuscomputer.sharepoint.com/_layouts/15/MicrosoftAjax.js",
+            "globalName": "Sys",
+            "globalDependencies": [
+                "sp-init"
+            ]
+        },
+        "sp-runtime": {
+            "path": "https://siriuscomputer.sharepoint.com/_layouts/15/SP.Runtime.js",
+            "globalName": "SP",
+            "globalDependencies": [
+                "microsoft-ajax"
+            ]
+        },
+        "sharepoint": {
+            "path": "https://siriuscomputer.sharepoint.com/_layouts/15/SP.js",
+            "globalName": "SP",
+            "globalDependencies": [
+                "sp-runtime"
+            ]
+        }
+    },
+    "localizedResources": {
+        "ListNavigationWebPartStrings": "lib/webparts/listNavigation/loc/{locale}.js"
+    }
+}

@@ -1,0 +1,12 @@
+.listFrameContainer {
+    height: 300px;
+    //width: 100%;
+    margin: 0px 8px;
+    .listViewRow {
+        display: flex;
+    }
+    .listViewColumn {
+        flex: 1;
+        padding: 10px;
+    }
+}

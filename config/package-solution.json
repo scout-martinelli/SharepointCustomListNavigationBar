@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "list-navigation-client-side-solution",
+    "id": "da664c63-32c4-4343-aeab-3fd1ab972c6d",
+    "version": "1.0.0.0",
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/list-navigation.sppkg"
+  }
+}

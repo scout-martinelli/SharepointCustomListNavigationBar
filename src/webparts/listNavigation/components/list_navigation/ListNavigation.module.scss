@@ -1,0 +1,70 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+.listNavigation {
+    margin: 0px 8px;
+    .container {
+        //max-width: 700px; 
+        //height: 50px;
+        //margin: 0px auto;
+        margin: 0px 8px;
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, .2), 0 25px 50px 0 rgba(0, 0, 0, .1);
+    }
+    .row {
+        margin: 0px 8px;
+        border-radius: 100px 100px 0px 0px; // padding: 20px;
+        height: 60px;
+    }
+    .listItem {
+        max-width: 715px;
+        margin: 5px auto 5px auto;
+        box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    }
+    .listContainer {
+        // left: 0;
+        display: flex;
+    }
+    .listElement {
+        flex: 2;
+        height: 60px;
+        margin: auto;
+        text-align: center;
+        line-height: 55px;
+        &:active,
+         :focus {
+            background-color: #0078d7;
+        }
+        &:hover {
+            background-color: #106ebe;
+        }
+        .titleLink {
+            user-select: none;
+        }
+    }
+    .hidden {
+        display: none;
+    }
+}
+
+// #tableDisplay {
+//     transform: translateY(-220px);
+//     transition: transform 400ms ease-in;
+// }
+// #tableDisplay.slideIn {
+//     transform: translateY(0);
+// }
+// #tableDisplay.slideOut {
+//     transform: translateY(-220px);
+// }
+// .example-enter {
+//     opacity: 0.01;
+// }
+// .example-enter.example-enter-active {
+//     opacity: 1;
+//     transition: opacity 500ms ease-in;
+// }
+// .example-leave {
+//     opacity: 1;
+// }
+// .example-leave.example-leave-active {
+//     opacity: 0.01;
+//     transition: opacity 300ms ease-in;
+// }
